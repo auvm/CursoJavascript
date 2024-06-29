@@ -27,7 +27,7 @@ for(var i = 0; i < items.length; i++){
     }
 }
 
-console.log("-----------------Elementos por CSS--------------------");
+console.log("--------------------------Elementos por CSS------------------------------");
 //De manera directa busca por el Id de la etiquera
 //const element = document.querySelector("#first-course");
 
@@ -48,12 +48,13 @@ for(var i = 0; i < items.length; i++){
     }
 }
 
+
+/**aquí usa una regla de CSS para seleccionar únicamente los elementos de la lista
+ *  que sean pares(odd) y también se puede con los impares(even)
+ */
 const items3 = document.querySelectorAll("li:nth-child(odd)");
-for(var i = 0; i < items.length; i++){
-    if( i % 2 == 0){
-        let element = items[i];
-        element.style.background = "#f2f2f2";
-        element.style.color = "#000000";
-        element.style.fontWeight = "Bold";
-    }
+for (const element of items3) {
+    element.style.background = "#f2f2f2";
+    element.style.color = "#000000";
+    element.style.fontWeight = "Bold";
 }
