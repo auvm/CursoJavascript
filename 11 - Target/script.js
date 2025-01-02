@@ -10,7 +10,7 @@ description.innerHTML = "Listado de nuevos cursos agregados.";
  * para accinar el botón y que desaparezca el div con todo su contenido.
  * 
  * La funcionalidad del botón se hace con un .addEventListener() común y la
- * recuperación del div como del botón se hace con un .querySelecto por ID de HTML
+ * recuperación del div como del botón se hace con un .querySelector por ID de HTML
  */
 
 //Recupero los elementos...
@@ -20,10 +20,10 @@ const continer_title = document.querySelector("#div_container");
 //agrego el listener al botón
 btn_evento.addEventListener("click", function(e){
     /**
-     * La función recibe un argumento, el objeto que lanzó el 
-     * evento, en este caso el btn_evento, en especial el elemento 
-     * se puede encontrar en el atributo "target" del objeto que 
-     * recibe.
+     * La función puede recibir un argumento(para el ejemplo, lo recibe),
+     * ese argumento es un objeto con un atributo especial, el atributo "target", 
+     * que alberga el "elemento HTML" que lanzó el evento,
+     * en este caso ese elemento es el "btn_evento".
      * 
      * NOTA: DIFERENCIAR ENTRE OBJETO Y ELEMENTO HTML NOS AYUDA A ENTENDER
      * A QUÉ SE REFIERE EL ATRIBUTO .TARGET, QUE SIMPLEMENTE ES EL ATRIBUTO
@@ -56,5 +56,6 @@ btn_evento.addEventListener("click", function(e){
          */
         e.target.textContent = "Ocultar";
     }
+    console.log("----------------------------------------")
 });
 
