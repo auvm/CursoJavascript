@@ -4,7 +4,8 @@
  * 
  * Por defecto ese evento provoca que una vez presionado el "submit",
  * la página se refresque y mande los datos al servidor, pero para poder 
- * ver la impresión de los datos, prevenimos con la función del evento (e) preventDefault()
+ * ver la impresión de los datos(del ejemplo), prevenimos con 
+ * la función del evento (e) preventDefault(),
  * así no se refresca y se verá a continuación.
  * 
  * 
