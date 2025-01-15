@@ -27,7 +27,7 @@ btn_evento.addEventListener("click", function(e){
      * 
      * NOTA: DIFERENCIAR ENTRE OBJETO Y ELEMENTO HTML NOS AYUDA A ENTENDER
      * A QUÉ SE REFIERE EL ATRIBUTO .TARGET, QUE SIMPLEMENTE ES EL ATRIBUTO
-     * DEL "OBJETO" QUE CONTIENE AL "ELEMENTO"
+     * DEL "OBJETO" (e, de evento) QUE CONTIENE AL "ELEMENTO" (elemento html).
      */
     console.log("OBJETO QUE LANZA EL EVENTO: ",e); //aquí se imprime el OBJETO!
 
